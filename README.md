@@ -56,17 +56,17 @@ API is available at `http://transit-api-818539203.us-east-1.elb.amazonaws.com/`
 
 # Setup
 
-###Configure AWS credentials on your machine.
+### Configure AWS credentials on your machine.
 Test currently connect to remote DynamoDB, so this is necessary.
 
-###Configure environment variables.
+### Configure environment variables.
 
 ```
 export AWS_PROFILE=***; # AWS profile you intend to use
 export API_KEY=***; # Port Authority api key
 ```
 
-###Install dependencies.
+### Install dependencies.
 
 Install nodejs 10.16.3 - https://nodejs.org/en/
 
@@ -75,7 +75,7 @@ npm install
 ```
 
 ### Run tests
-Note: Tests are cursor to show ability to run. Run the worker test a few times to generate data for the api.
+Note: Tests are basic to show ability to run. Run the worker test a few times to generate data for the api.
 
 ```
 npm run test-worker
