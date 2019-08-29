@@ -1,0 +1,24 @@
+{
+  "name": "grid-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-worker": "node spec/worker.js",
+    "test-service": "node spec/service.js",
+    "package-worker": "node-lambda zip -H worker.handler -n BustimeApiWorker -A build -x '.env spec terraform service.js'",
+    "package-service": "node-lambda zip -H service.handler -n VehicleInfoApi -A build -x '.env spec terraform worker.js'"
+  },
+  "author": "Jonathan Limbird",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.519.0",
+    "config": "^3.2.2",
+    "dynamodb-doc": "^1.0.0",
+    "dynamoose": "^1.11.0",
+    "node-lambda": "^0.14.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}
