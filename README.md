@@ -82,6 +82,16 @@ npm run test-worker
 npm run test-service
 ```
 
+# Packaging
+
+To package either service as a ZIP for uploading to AWS Lambda, run:
+
+```
+npm run package-worker
+npm run package-service
+```
+
+
 # Next Steps
 
 * improve testing so there are no external dependencies and tests all use cases
