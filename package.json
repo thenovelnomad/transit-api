@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.519.0",
-    "config": "^3.2.2",
+    "config": "^3.3.8",
     "dynamodb-doc": "^1.0.0",
     "dynamoose": "^1.11.0",
     "node-lambda": "^0.14.0",
